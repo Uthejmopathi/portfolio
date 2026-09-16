@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Uthej Mopathi — Senior Software Engineer. Enterprise iOS, AI systems, and production-grade mobile platforms." />
+  <meta name="theme-color" content="#04080f" />
+  <title>Uthej Mopathi — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Orbitron:wght@500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <canvas id="space" aria-hidden="true"></canvas>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <div class="boot" id="boot" aria-hidden="true">
+    <div class="boot-panel">
+      <p class="boot-brand">UM // PORTFOLIO SYSTEMS</p>
+      <pre id="boot-log" class="boot-log"></pre>
+      <div class="boot-bar"><span id="boot-fill"></span></div>
+    </div>
+  </div>
+
+  <div class="hud-frame" aria-hidden="true">
+    <span class="hud-corner tl"></span>
+    <span class="hud-corner tr"></span>
+    <span class="hud-corner bl"></span>
+    <span class="hud-corner br"></span>
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="wordmark" href="./" id="sys-reload" title="Reload systems">
+      <span class="status-dot" aria-hidden="true"></span>
+      UTHEJ.SYS
+    </a>
+    <div class="header-status" aria-hidden="true">
+      <span>LAT 30.27N</span>
+      <span>AUSTIN.TX</span>
+      <span id="clock">00:00:00</span>
+    </div>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="#impact"><span>01</span>Impact</a>
+      <a href="#work"><span>02</span>Work</a>
+      <a href="#writing"><span>03</span>Intel</a>
+      <a href="#experience"><span>04</span>Ops</a>
+      <a href="#contact"><span>05</span>Link</a>
+      <a class="nav-cta" href="UthejMopathiResume.pdf" download>Resume ↓</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-left" data-hero-anim>
+        <p class="hero-kicker">$ initiate_sequence --target portfolio</p>
+        <h1 class="hero-brand">
+          <span class="glitch" data-text="UTHEJ">UTHEJ</span>
+          <span class="glitch" data-text="MOPATHI">MOPATHI</span>
+        </h1>
+        <p class="hero-role">Senior Software Engineer // iOS · AI · Enterprise Systems</p>
+        <p class="hero-lede">
+          Building payment platforms, observability stacks, and AI-integrated mobile systems that survive production — from Austin, Texas.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">View mission log</a>
+          <a class="btn btn-ghost" href="#contact">Open channel</a>
+        </div>
+      </div>
+
+      <aside class="terminal" id="terminal-panel" aria-label="Interactive system terminal" tabindex="0" data-hero-anim>
+        <div class="terminal-bar">
+          <span class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="terminal-title">uthej@portfolio:~</span>
+          <span class="terminal-live">LIVE</span>
+        </div>
+        <div class="terminal-body" id="terminal">
+          <div class="terminal-log" id="terminal-log" aria-live="polite">
+            <p><span class="prompt">$</span> <span class="cmd">whoami</span></p>
+            <p class="out">&gt; uthej_mopathi — senior_ios_engineer / ai_systems</p>
+            <p><span class="prompt">$</span> <span class="cmd">status</span></p>
+            <p class="out">&gt; <span class="ok">ONLINE</span> · type <span class="hl">help</span> for commands</p>
+          </div>
+          <form class="terminal-form" id="terminal-form" autocomplete="off">
+            <label class="sr-only" for="terminal-input">Terminal command</label>
+            <span class="prompt" aria-hidden="true">$</span>
+            <input
+              id="terminal-input"
+              class="terminal-input"
+              type="text"
+              spellcheck="false"
+              autocapitalize="off"
+              autocorrect="off"
+              enterkeyhint="go"
+              placeholder="try: work | resume | help"
+            />
+          </form>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section impact" id="impact">
+      <div class="section-inner">
+        <div class="section-label" data-animate>
+          <span>01</span>
+          <h2>impact_metrics</h2>
+          <p>Signals from production systems.</p>
+        </div>
+        <div class="metric-grid">
+          <article class="metric-card" data-animate data-delay="0">
+            <p class="metric-code">SIG.01</p>
+            <p class="metric-value" data-count="20" data-suffix="%">0%</p>
+            <p class="metric-label">Payment conversion lift via App Switch</p>
+            <div class="metric-bar"><span style="--w:80%"></span></div>
+          </article>
+          <article class="metric-card" data-animate data-delay="1">
+            <p class="metric-code">SIG.02</p>
+            <p class="metric-value" data-count="60" data-suffix="%">0%</p>
+            <p class="metric-label">Latency reduction on critical flows</p>
+            <div class="metric-bar"><span style="--w:90%"></span></div>
+          </article>
+          <article class="metric-card" data-animate data-delay="2">
+            <p class="metric-code">SIG.03</p>
+            <p class="metric-value">1M+</p>
+            <p class="metric-label">Additional payments unlocked / day</p>
+            <div class="metric-bar"><span style="--w:95%"></span></div>
+          </article>
+          <article class="metric-card" data-animate data-delay="3">
+            <p class="metric-code">SIG.04</p>
+            <p class="metric-value" data-count="100" data-suffix="+">0+</p>
+            <p class="metric-label">Features led on wealth dashboard</p>
+            <div class="metric-bar"><span style="--w:85%"></span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-inner about-grid">
+        <div class="section-label" data-animate>
+          <span>00</span>
+          <h2>about_operator</h2>
+          <p>Profile dossier.</p>
+        </div>
+        <div class="about-copy" data-animate data-delay="1">
+          <p>
+            I architect enterprise iOS platforms where payments, AI, and observability meet. Currently at PayPal shaping App Switch, ML-informed quality signals, and next-gen mobile architecture with Bazel.
+          </p>
+          <p>
+            Previously led in-store systems at T-Mobile and Citibank’s wealth experience. Outside work: shipping private products, publishing technical writing, and exploring on-device AI that stays local by default.
+          </p>
+          <div class="stack-board">
+            <div>
+              <h3>$ mobile</h3>
+              <ul><li>Swift</li><li>SwiftUI</li><li>UIKit</li><li>Bazel</li></ul>
+            </div>
+            <div>
+              <h3>$ systems</h3>
+              <ul><li>AI / ML</li><li>DataDog</li><li>FPTI</li><li>CI/CD</li></ul>
+            </div>
+            <div>
+              <h3>$ delivery</h3>
+              <ul><li>Harness</li><li>Appium</li><li>BrowserStack</li><li>Automation</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section work" id="work">
+      <div class="section-inner">
+        <div class="section-label" data-animate>
+          <span>02</span>
+          <h2>mission_files</h2>
+          <p>Selected builds. Private dossiers stay sealed.</p>
+        </div>
+
+        <div class="dossier-grid">
+          <article class="dossier dossier-launch" data-animate data-delay="0">
+            <div class="dossier-top">
+              <span class="file-id">FILE / 01</span>
+              <span class="badge badge-amber">LAUNCH SOON</span>
+            </div>
+            <h3>Vyra</h3>
+            <p class="launch-line">Something’s charging up.</p>
+            <p class="sealed">Be excited — see you live very shortly.</p>
+            <div class="tags"><span>Coming soon</span><span>Stay tuned</span></div>
+          </article>
+
+          <article class="dossier classified" data-animate data-delay="1">
+            <div class="dossier-top">
+              <span class="file-id">FILE / 02</span>
+              <span class="badge badge-red">CLASSIFIED</span>
+            </div>
+            <h3>Clixor</h3>
+            <p>A private build in progress. Details stay sealed for now.</p>
+            <p class="sealed">Happy to walk through Clixor when we connect.</p>
+            <div class="tags"><span>Private</span><span>In progress</span></div>
+          </article>
+        </div>
+
+        <div class="section-label public-label" data-animate>
+          <span>02B</span>
+          <h2>public_repos</h2>
+          <p>Open and shareable work.</p>
+        </div>
+
+        <div class="dossier-grid public-grid">
+          <article class="dossier open-file" data-animate data-delay="0">
+            <div class="dossier-top">
+              <span class="file-id">REPO / 01</span>
+              <span class="badge badge-green">PUBLIC</span>
+            </div>
+            <h3>PulseLens</h3>
+            <p>OpenTelemetry-compatible observability platform with multi-platform SDK adapters and an evidence-first investigation engine.</p>
+            <a class="text-link" href="https://github.com/Uthejmopathi/PulseLens" target="_blank" rel="noopener noreferrer">Open repository ↗</a>
+            <div class="tags"><span>Python</span><span>OTel</span><span>Observability</span></div>
+          </article>
+
+          <article class="dossier open-file" data-animate data-delay="1">
+            <div class="dossier-top">
+              <span class="file-id">REPO / 02</span>
+              <span class="badge badge-green">PUBLIC</span>
+            </div>
+            <h3>Blackjack</h3>
+            <p>Classic Blackjack game implemented in Python 3.</p>
+            <a class="text-link" href="https://github.com/Uthejmopathi/blackjack" target="_blank" rel="noopener noreferrer">Open repository ↗</a>
+            <div class="tags"><span>Python</span><span>Game</span></div>
+          </article>
+
+          <article class="dossier open-file" data-animate data-delay="2">
+            <div class="dossier-top">
+              <span class="file-id">REPO / 03</span>
+              <span class="badge badge-green">GITHUB</span>
+            </div>
+            <h3>NexCard</h3>
+            <p>Mobile networking / card experience built as a native app project.</p>
+            <a class="text-link" href="https://github.com/Uthejmopathi/NexCard" target="_blank" rel="noopener noreferrer">Open repository ↗</a>
+            <div class="tags"><span>Mobile</span><span>iOS / Android</span></div>
+          </article>
+
+          <article class="dossier open-file" data-animate data-delay="3">
+            <div class="dossier-top">
+              <span class="file-id">REPO / 04</span>
+              <span class="badge badge-green">LOCAL</span>
+            </div>
+            <h3>LocalB</h3>
+            <p>iOS marketplace-style app for local posts, messaging, reviews, and payments.</p>
+            <div class="tags"><span>Swift</span><span>iOS</span><span>Firebase</span></div>
+          </article>
+
+          <article class="dossier open-file" data-animate data-delay="0">
+            <div class="dossier-top">
+              <span class="file-id">REPO / 05</span>
+              <span class="badge badge-green">PUBLIC</span>
+            </div>
+            <h3>Employees App</h3>
+            <p>Swift employee management application from the iOS project series.</p>
+            <a class="text-link" href="https://github.com/Uthejmopathi/EmployeesApp" target="_blank" rel="noopener noreferrer">Open repository ↗</a>
+            <div class="tags"><span>Swift</span><span>iOS</span></div>
+          </article>
+
+          <article class="dossier open-file" data-animate data-delay="1">
+            <div class="dossier-top">
+              <span class="file-id">REPO / 06</span>
+              <span class="badge badge-green">NEW</span>
+            </div>
+            <h3>Mopathi Charitable Trust</h3>
+            <p>Community-facing site for Mopathi Charitable Trust — serving Chittoor, Andhra Pradesh.</p>
+            <a class="text-link" href="https://github.com/Uthejmopathi/mopathicharitabletrust" target="_blank" rel="noopener noreferrer">Open repository ↗</a>
+            <div class="tags"><span>Next.js</span><span>Nonprofit</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section writing" id="writing">
+      <div class="section-inner">
+        <div class="section-label writing-head" data-animate>
+          <div>
+            <span>03</span>
+            <h2>intel_feed</h2>
+            <p>Published signal across HackerNoon, DZone, and Medium.</p>
+          </div>
+          <div class="article-filters" role="tablist" aria-label="Filter articles">
+            <button type="button" class="filter is-active" data-filter="all" aria-selected="true">ALL</button>
+            <button type="button" class="filter" data-filter="hackernoon" aria-selected="false">HACKERNOON</button>
+            <button type="button" class="filter" data-filter="dzone" aria-selected="false">DZONE</button>
+            <button type="button" class="filter" data-filter="medium" aria-selected="false">MEDIUM</button>
+          </div>
+        </div>
+
+        <ul class="intel-list" data-animate data-delay="1">
+          <li class="article" data-source="hackernoon">
+            <a href="https://hackernoon.com/the-end-of-crud-apis-designing-intent-driven-services-for-ai-agents" target="_blank" rel="noopener noreferrer">
+              <span class="a-id">01</span>
+              <span class="a-src">HackerNoon</span>
+              <span class="a-title">The End of CRUD APIs? Designing Intent-Driven Services for AI Agents</span>
+              <span class="a-date">Jul 2026</span>
+            </a>
+          </li>
+          <li class="article" data-source="dzone">
+            <a href="https://dzone.com/articles/advanced-ios-performance-optimization" target="_blank" rel="noopener noreferrer">
+              <span class="a-id">02</span>
+              <span class="a-src">DZone</span>
+              <span class="a-title">Building Offline-First iOS Applications with Local Data Storage</span>
+              <span class="a-date">Jul 2026</span>
+            </a>
+          </li>
+          <li class="article" data-source="hackernoon">
+            <a href="https://hackernoon.com/why-mobile-observability-will-become-as-important-as-backend-monitoring" target="_blank" rel="noopener noreferrer">
+              <span class="a-id">03</span>
+              <span class="a-src">HackerNoon</span>
+              <span class="a-title">Why Mobile Observability Will Become as Important as Backend Monitoring</span>
+              <span class="a-date">May 2026</span>
+            </a>
+          </li>
+          <li class="article" data-source="hackernoon">
+            <a href="https://hackernoon.com/the-rise-of-ai-native-ios-applications" target="_blank" rel="noopener noreferrer">
+              <span class="a-id">04</span>
+              <span class="a-src">HackerNoon</span>
+              <span class="a-title">The Rise of AI-Native iOS Applications</span>
+              <span class="a-date">May 2026</span>
+            </a>
+          </li>
+          <li class="article" data-source="hackernoon">
+            <a href="https://hackernoon.com/why-mobile-apps-need-backend-thinking-even-on-the-frontend" target="_blank" rel="noopener noreferrer">
+              <span class="a-id">05</span>
+              <span class="a-src">HackerNoon</span>
+              <span class="a-title">Why Mobile Apps Need Backend Thinking (Even on the Frontend)</span>
+              <span class="a-date">Apr 2026</span>
+            </a>
+          </li>
+          <li class="article" data-source="hackernoon">
+            <a href="https://hackernoon.com/ai-in-mobile-apps-but-done-right-an-ios-developers-guide-to-performance-privacy" target="_blank" rel="noopener noreferrer">
+              <span class="a-id">06</span>
+              <span class="a-src">HackerNoon</span>
+              <span class="a-title">AI in Mobile Apps (But Done Right): Performance &amp; Privacy</span>
+              <span class="a-date">Apr 2026</span>
+            </a>
+          </li>
+          <li class="article" data-source="medium">
+            <a href="https://medium.com/@mopathiuthej0711/on-device-ai-in-ios-why-it-matters-more-than-ever-and-how-to-do-it-right-90a20e5b0191" target="_blank" rel="noopener noreferrer">
+              <span class="a-id">07</span>
+              <span class="a-src">Medium</span>
+              <span class="a-title">On-Device AI in iOS: Why It Matters More Than Ever</span>
+              <span class="a-date">Apr 2026</span>
+            </a>
+          </li>
+          <li class="article" data-source="medium">
+            <a href="https://medium.com/@mopathiuthej0711/why-your-ios-app-architecture-doesnt-scale-and-how-to-fix-it-f48bdd7c8f54" target="_blank" rel="noopener noreferrer">
+              <span class="a-id">08</span>
+              <span class="a-src">Medium</span>
+              <span class="a-title">Why Your iOS App Architecture Doesn’t Scale (And How to Fix It)</span>
+              <span class="a-date">Apr 2026</span>
+            </a>
+          </li>
+          <li class="article" data-source="hackernoon">
+            <a href="https://hackernoon.com/the-complete-guide-to-migrating-from-uikit-to-swiftui-in-large-production-apps" target="_blank" rel="noopener noreferrer">
+              <span class="a-id">09</span>
+              <span class="a-src">HackerNoon</span>
+              <span class="a-title">Migrating From UIKit to SwiftUI in Large Production Apps</span>
+              <span class="a-date">Apr 2026</span>
+            </a>
+          </li>
+          <li class="article" data-source="hackernoon">
+            <a href="https://hackernoon.com/designing-reliable-app-switch-flows-on-ios-for-secure-transactions" target="_blank" rel="noopener noreferrer">
+              <span class="a-id">10</span>
+              <span class="a-src">HackerNoon</span>
+              <span class="a-title">Designing Reliable App Switch Flows on iOS for Secure Transactions</span>
+              <span class="a-date">Apr 2026</span>
+            </a>
+          </li>
+          <li class="article" data-source="medium">
+            <a href="https://medium.com/@mopathiuthej0711/ai-vibe-coding-accelerating-ios-development-while-managing-its-hidden-costs-2bb2ac121f43" target="_blank" rel="noopener noreferrer">
+              <span class="a-id">11</span>
+              <span class="a-src">Medium</span>
+              <span class="a-title">AI Vibe Coding: Accelerating iOS Development While Managing Hidden Costs</span>
+              <span class="a-date">Apr 2026</span>
+            </a>
+          </li>
+          <li class="article" data-source="medium">
+            <a href="https://medium.com/@mopathiuthej0711/implementing-offline-first-architecture-in-ios-apps-using-combine-and-core-data-8266e781914f" target="_blank" rel="noopener noreferrer">
+              <span class="a-id">12</span>
+              <span class="a-src">Medium</span>
+              <span class="a-title">Offline-First Architecture in iOS Using Combine and Core Data</span>
+              <span class="a-date">Apr 2026</span>
+            </a>
+          </li>
+          <li class="article" data-source="hackernoon">
+            <a href="https://hackernoon.com/how-to-architect-enterprise-scale-ios-applications-using-modular-swiftui" target="_blank" rel="noopener noreferrer">
+              <span class="a-id">13</span>
+              <span class="a-src">HackerNoon</span>
+              <span class="a-title">Architecting Enterprise-Scale iOS Apps with Modular SwiftUI</span>
+              <span class="a-date">Mar 2026</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="writing-links">
+          <a href="https://hackernoon.com/u/uthejdeveloper" target="_blank" rel="noopener noreferrer">HackerNoon ↗</a>
+          <a href="https://dzone.com/users/5498482/mopathiuthej.html" target="_blank" rel="noopener noreferrer">DZone ↗</a>
+          <a href="https://medium.com/@mopathiuthej0711" target="_blank" rel="noopener noreferrer">Medium ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="section-inner">
+        <div class="section-label" data-animate>
+          <span>04</span>
+          <h2>ops_history</h2>
+          <p>Deployment timeline.</p>
+        </div>
+        <ol class="ops-list">
+          <li data-animate data-delay="0">
+            <div class="ops-when">2025 — Present</div>
+            <div class="ops-what">
+              <h3>PayPal <span>Senior Software Engineer</span></h3>
+              <p>App Switch payments, AI-assisted fraud signals, DataDog/FPTI observability, Bazel next-gen iOS platform, Harness/BrowserStack/Appium CI.</p>
+            </div>
+          </li>
+          <li data-animate data-delay="1">
+            <div class="ops-when">2023 — 2025</div>
+            <div class="ops-what">
+              <h3>T-Mobile <span>Software Engineer II — iOS</span></h3>
+              <p>Led 8 in-store CocoaPods apps; modularization reduced release bugs ~30%.</p>
+            </div>
+          </li>
+          <li data-animate data-delay="2">
+            <div class="ops-when">2021 — 2023</div>
+            <div class="ops-what">
+              <h3>Citibank <span>via Globant</span></h3>
+              <p>Wealth Dashboard on Obj-C / Swift / SwiftUI with Adobe Analytics, Splunk, and MVVM networking.</p>
+            </div>
+          </li>
+          <li data-animate data-delay="3">
+            <div class="ops-when">2020 — 2021</div>
+            <div class="ops-what">
+              <h3>SM Logics <span>Software Developer</span></h3>
+              <p>iOS search features in Swift with XCTest coverage.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-inner contact-panel" data-animate>
+        <div class="section-label">
+          <span>05</span>
+          <h2>open_channel</h2>
+          <p>$ initiate_conversation</p>
+        </div>
+        <h3 class="contact-title">Let’s build systems that hold under load.</h3>
+        <p class="contact-lede">
+          For iOS architecture, AI on mobile, platform work — or a sealed walkthrough of Vyra and Clixor.
+        </p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:mopathiuthej4@gmail.com">Transmit message</a>
+          <a class="btn btn-ghost" href="UthejMopathiResume.pdf" download>Resume download ↓</a>
+        </div>
+        <ul class="socials">
+          <li><a href="https://www.linkedin.com/in/uthejm/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/Uthejmopathi" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://hackernoon.com/u/uthejdeveloper" target="_blank" rel="noopener noreferrer">HackerNoon</a></li>
+          <li><a href="https://dzone.com/users/5498482/mopathiuthej.html" target="_blank" rel="noopener noreferrer">DZone</a></li>
+          <li><a href="https://medium.com/@mopathiuthej0711" target="_blank" rel="noopener noreferrer">Medium</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <div class="nav-flash" id="nav-flash" aria-hidden="true"></div>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Uthej Mopathi · SYS.ONLINE · Austin, TX</p>
+    <a href="#top" id="uplink-top">Return to uplink ↑</a>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
