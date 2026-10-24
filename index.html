@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Orbitron:wght@500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css?v=2" />
 </head>
 <body>
   <canvas id="space" aria-hidden="true"></canvas>
@@ -48,7 +48,7 @@
       <a href="#impact"><span>01</span>Impact</a>
       <a href="#work"><span>02</span>Work</a>
       <a href="#writing"><span>03</span>Intel</a>
-      <a href="#experience"><span>04</span>Ops</a>
+      <a href="#research"><span>04</span>Research</a>
       <a href="#contact"><span>05</span>Link</a>
       <a class="nav-cta" href="UthejMopathiResume.pdf" download>Resume ↓</a>
     </nav>
@@ -62,7 +62,26 @@
           <span class="glitch" data-text="UTHEJ">UTHEJ</span>
           <span class="glitch" data-text="MOPATHI">MOPATHI</span>
         </h1>
-        <p class="hero-role">Senior Software Engineer // iOS · AI · Enterprise Systems</p>
+        <p class="hero-role">Senior Software Engineer @ PayPal</p>
+        <ul class="hero-creds" aria-label="Credentials">
+          <li>
+            <span class="cred-dot" aria-hidden="true"></span>
+            Senior Software Engineer @ PayPal
+          </li>
+          <li>
+            <a href="https://dzone.com/authors/mopathiuthej" target="_blank" rel="noopener noreferrer">
+              <span class="cred-dot" aria-hidden="true"></span>
+              DZone Expert
+            </a>
+          </li>
+          <li>
+            <a href="https://www.apm.org.uk/membership/" target="_blank" rel="noopener noreferrer">
+              <span class="cred-dot" aria-hidden="true"></span>
+              APM Full Member
+            </a>
+          </li>
+        </ul>
+        <p class="hero-focus">iOS · AI · Enterprise Systems</p>
         <p class="hero-lede">
           Building payment platforms, observability stacks, and AI-integrated mobile systems that survive production — from Austin, Texas.
         </p>
@@ -81,7 +100,8 @@
         <div class="terminal-body" id="terminal">
           <div class="terminal-log" id="terminal-log" aria-live="polite">
             <p><span class="prompt">$</span> <span class="cmd">whoami</span></p>
-            <p class="out">&gt; uthej_mopathi — senior_ios_engineer / ai_systems</p>
+            <p class="out">&gt; uthej_mopathi — senior software engineer @ paypal</p>
+            <p class="out">&gt; dzone expert · apm full member</p>
             <p><span class="prompt">$</span> <span class="cmd">status</span></p>
             <p class="out">&gt; <span class="ok">ONLINE</span> · type <span class="hl">help</span> for commands</p>
           </div>
@@ -153,6 +173,24 @@
           <p>
             Previously led in-store systems at T-Mobile and Citibank’s wealth experience. Outside work: shipping private products, publishing technical writing, and exploring on-device AI that stays local by default.
           </p>
+
+          <div class="cred-grid">
+            <article class="cred-card">
+              <p class="cred-badge">DZone Expert</p>
+              <p>
+                <strong>DZone</strong> is a large software-engineering community and publication network where practitioners publish practical articles on architecture, languages, cloud, AI, and more. Expert status recognizes sustained, high-signal technical contribution.
+              </p>
+            </article>
+            <article class="cred-card">
+              <p class="cred-badge">
+                <a href="https://www.apm.org.uk/membership/" target="_blank" rel="noopener noreferrer">APM Full Member ↗</a>
+              </p>
+              <p>
+                <strong>APM</strong> (Association for Project Management) is the chartered professional body for project professionals. Full Member is a professional membership grade recognizing experience and commitment to the discipline.
+              </p>
+            </article>
+          </div>
+
           <div class="stack-board">
             <div>
               <h3>$ mobile</h3>
@@ -175,6 +213,48 @@
       <div class="section-inner">
         <div class="section-label" data-animate>
           <span>02</span>
+          <h2>work_log</h2>
+          <p>Experience first — then selected builds.</p>
+        </div>
+
+        <div class="section-label work-subhead" id="experience" data-animate>
+          <span>02A</span>
+          <h2>ops_history</h2>
+          <p>Where I’ve shipped.</p>
+        </div>
+        <ol class="ops-list">
+          <li data-animate data-delay="0">
+            <div class="ops-when">2025 — Present</div>
+            <div class="ops-what">
+              <h3>PayPal <span>Senior Software Engineer</span></h3>
+              <p>App Switch payments, AI-assisted fraud signals, DataDog/FPTI observability, Bazel next-gen iOS platform, Harness/BrowserStack/Appium CI.</p>
+            </div>
+          </li>
+          <li data-animate data-delay="1">
+            <div class="ops-when">2023 — 2025</div>
+            <div class="ops-what">
+              <h3>T-Mobile <span>Software Engineer II — iOS</span></h3>
+              <p>Led 8 in-store CocoaPods apps; modularization reduced release bugs ~30%.</p>
+            </div>
+          </li>
+          <li data-animate data-delay="2">
+            <div class="ops-when">2021 — 2023</div>
+            <div class="ops-what">
+              <h3>Citibank <span>via Globant</span></h3>
+              <p>Wealth Dashboard on Obj-C / Swift / SwiftUI with Adobe Analytics, Splunk, and MVVM networking.</p>
+            </div>
+          </li>
+          <li data-animate data-delay="3">
+            <div class="ops-when">2020 — 2021</div>
+            <div class="ops-what">
+              <h3>SM Logics <span>Software Developer</span></h3>
+              <p>iOS search features in Swift with XCTest coverage.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="section-label work-subhead" data-animate>
+          <span>02B</span>
           <h2>mission_files</h2>
           <p>Selected builds. Private dossiers stay sealed.</p>
         </div>
@@ -204,7 +284,7 @@
         </div>
 
         <div class="section-label public-label" data-animate>
-          <span>02B</span>
+          <span>02C</span>
           <h2>public_repos</h2>
           <p>Open and shareable work.</p>
         </div>
@@ -280,172 +360,95 @@
 
     <section class="section writing" id="writing">
       <div class="section-inner">
-        <div class="section-label writing-head" data-animate>
-          <div>
-            <span>03</span>
-            <h2>intel_feed</h2>
-            <p>Published signal across HackerNoon, DZone, and Medium.</p>
-          </div>
-          <div class="article-filters" role="tablist" aria-label="Filter articles">
-            <button type="button" class="filter is-active" data-filter="all" aria-selected="true">ALL</button>
-            <button type="button" class="filter" data-filter="hackernoon" aria-selected="false">HACKERNOON</button>
-            <button type="button" class="filter" data-filter="dzone" aria-selected="false">DZONE</button>
-            <button type="button" class="filter" data-filter="medium" aria-selected="false">MEDIUM</button>
-          </div>
+        <div class="section-label" data-animate>
+          <span>03</span>
+          <h2>intel_channels</h2>
+          <p>Published writing across the network.</p>
         </div>
 
-        <ul class="intel-list" data-animate data-delay="1">
-          <li class="article" data-source="hackernoon">
-            <a href="https://hackernoon.com/the-end-of-crud-apis-designing-intent-driven-services-for-ai-agents" target="_blank" rel="noopener noreferrer">
-              <span class="a-id">01</span>
-              <span class="a-src">HackerNoon</span>
-              <span class="a-title">The End of CRUD APIs? Designing Intent-Driven Services for AI Agents</span>
-              <span class="a-date">Jul 2026</span>
-            </a>
-          </li>
-          <li class="article" data-source="dzone">
-            <a href="https://dzone.com/articles/advanced-ios-performance-optimization" target="_blank" rel="noopener noreferrer">
-              <span class="a-id">02</span>
-              <span class="a-src">DZone</span>
-              <span class="a-title">Building Offline-First iOS Applications with Local Data Storage</span>
-              <span class="a-date">Jul 2026</span>
-            </a>
-          </li>
-          <li class="article" data-source="hackernoon">
-            <a href="https://hackernoon.com/why-mobile-observability-will-become-as-important-as-backend-monitoring" target="_blank" rel="noopener noreferrer">
-              <span class="a-id">03</span>
-              <span class="a-src">HackerNoon</span>
-              <span class="a-title">Why Mobile Observability Will Become as Important as Backend Monitoring</span>
-              <span class="a-date">May 2026</span>
-            </a>
-          </li>
-          <li class="article" data-source="hackernoon">
-            <a href="https://hackernoon.com/the-rise-of-ai-native-ios-applications" target="_blank" rel="noopener noreferrer">
-              <span class="a-id">04</span>
-              <span class="a-src">HackerNoon</span>
-              <span class="a-title">The Rise of AI-Native iOS Applications</span>
-              <span class="a-date">May 2026</span>
-            </a>
-          </li>
-          <li class="article" data-source="hackernoon">
-            <a href="https://hackernoon.com/why-mobile-apps-need-backend-thinking-even-on-the-frontend" target="_blank" rel="noopener noreferrer">
-              <span class="a-id">05</span>
-              <span class="a-src">HackerNoon</span>
-              <span class="a-title">Why Mobile Apps Need Backend Thinking (Even on the Frontend)</span>
-              <span class="a-date">Apr 2026</span>
-            </a>
-          </li>
-          <li class="article" data-source="hackernoon">
-            <a href="https://hackernoon.com/ai-in-mobile-apps-but-done-right-an-ios-developers-guide-to-performance-privacy" target="_blank" rel="noopener noreferrer">
-              <span class="a-id">06</span>
-              <span class="a-src">HackerNoon</span>
-              <span class="a-title">AI in Mobile Apps (But Done Right): Performance &amp; Privacy</span>
-              <span class="a-date">Apr 2026</span>
-            </a>
-          </li>
-          <li class="article" data-source="medium">
-            <a href="https://medium.com/@mopathiuthej0711/on-device-ai-in-ios-why-it-matters-more-than-ever-and-how-to-do-it-right-90a20e5b0191" target="_blank" rel="noopener noreferrer">
-              <span class="a-id">07</span>
-              <span class="a-src">Medium</span>
-              <span class="a-title">On-Device AI in iOS: Why It Matters More Than Ever</span>
-              <span class="a-date">Apr 2026</span>
-            </a>
-          </li>
-          <li class="article" data-source="medium">
-            <a href="https://medium.com/@mopathiuthej0711/why-your-ios-app-architecture-doesnt-scale-and-how-to-fix-it-f48bdd7c8f54" target="_blank" rel="noopener noreferrer">
-              <span class="a-id">08</span>
-              <span class="a-src">Medium</span>
-              <span class="a-title">Why Your iOS App Architecture Doesn’t Scale (And How to Fix It)</span>
-              <span class="a-date">Apr 2026</span>
-            </a>
-          </li>
-          <li class="article" data-source="hackernoon">
-            <a href="https://hackernoon.com/the-complete-guide-to-migrating-from-uikit-to-swiftui-in-large-production-apps" target="_blank" rel="noopener noreferrer">
-              <span class="a-id">09</span>
-              <span class="a-src">HackerNoon</span>
-              <span class="a-title">Migrating From UIKit to SwiftUI in Large Production Apps</span>
-              <span class="a-date">Apr 2026</span>
-            </a>
-          </li>
-          <li class="article" data-source="hackernoon">
-            <a href="https://hackernoon.com/designing-reliable-app-switch-flows-on-ios-for-secure-transactions" target="_blank" rel="noopener noreferrer">
-              <span class="a-id">10</span>
-              <span class="a-src">HackerNoon</span>
-              <span class="a-title">Designing Reliable App Switch Flows on iOS for Secure Transactions</span>
-              <span class="a-date">Apr 2026</span>
-            </a>
-          </li>
-          <li class="article" data-source="medium">
-            <a href="https://medium.com/@mopathiuthej0711/ai-vibe-coding-accelerating-ios-development-while-managing-its-hidden-costs-2bb2ac121f43" target="_blank" rel="noopener noreferrer">
-              <span class="a-id">11</span>
-              <span class="a-src">Medium</span>
-              <span class="a-title">AI Vibe Coding: Accelerating iOS Development While Managing Hidden Costs</span>
-              <span class="a-date">Apr 2026</span>
-            </a>
-          </li>
-          <li class="article" data-source="medium">
-            <a href="https://medium.com/@mopathiuthej0711/implementing-offline-first-architecture-in-ios-apps-using-combine-and-core-data-8266e781914f" target="_blank" rel="noopener noreferrer">
-              <span class="a-id">12</span>
-              <span class="a-src">Medium</span>
-              <span class="a-title">Offline-First Architecture in iOS Using Combine and Core Data</span>
-              <span class="a-date">Apr 2026</span>
-            </a>
-          </li>
-          <li class="article" data-source="hackernoon">
-            <a href="https://hackernoon.com/how-to-architect-enterprise-scale-ios-applications-using-modular-swiftui" target="_blank" rel="noopener noreferrer">
-              <span class="a-id">13</span>
-              <span class="a-src">HackerNoon</span>
-              <span class="a-title">Architecting Enterprise-Scale iOS Apps with Modular SwiftUI</span>
-              <span class="a-date">Mar 2026</span>
-            </a>
-          </li>
-        </ul>
+        <div class="writing-hero" data-animate data-delay="1">
+          <p class="writing-kicker">$ cat ~/articles/readme.md</p>
+          <h3 class="writing-headline">
+            I write about iOS architecture, payments, observability, and AI on mobile —
+            <span>have a look at the full archive on these channels.</span>
+          </h3>
+          <p class="writing-sub">
+            Deep dives live where they’re published. Jump into a profile and browse the latest.
+          </p>
+        </div>
 
-        <div class="writing-links">
-          <a href="https://hackernoon.com/u/uthejdeveloper" target="_blank" rel="noopener noreferrer">HackerNoon ↗</a>
-          <a href="https://dzone.com/users/5498482/mopathiuthej.html" target="_blank" rel="noopener noreferrer">DZone ↗</a>
-          <a href="https://medium.com/@mopathiuthej0711" target="_blank" rel="noopener noreferrer">Medium ↗</a>
+        <div class="channel-grid">
+          <a class="channel-card" data-animate data-delay="0" href="https://hackernoon.com/u/uthejmopathi" target="_blank" rel="noopener noreferrer">
+            <div class="channel-top">
+              <span class="channel-id">CH / 01</span>
+              <span class="channel-arrow" aria-hidden="true">↗</span>
+            </div>
+            <h4>HackerNoon</h4>
+            <p>Architecture essays, App Switch, SwiftUI migration, and AI-native iOS systems.</p>
+            <span class="channel-cta">Open profile</span>
+          </a>
+
+          <a class="channel-card" data-animate data-delay="1" href="https://dzone.com/authors/mopathiuthej" target="_blank" rel="noopener noreferrer">
+            <div class="channel-top">
+              <span class="channel-id">CH / 02</span>
+              <span class="channel-arrow" aria-hidden="true">↗</span>
+            </div>
+            <h4>DZone</h4>
+            <p>Practical mobile engineering — offline-first storage, performance, and production patterns. DZone Expert.</p>
+            <span class="channel-cta">Open profile</span>
+          </a>
+
+          <a class="channel-card" data-animate data-delay="2" href="https://medium.com/@mopathiuthej0711" target="_blank" rel="noopener noreferrer">
+            <div class="channel-top">
+              <span class="channel-id">CH / 03</span>
+              <span class="channel-arrow" aria-hidden="true">↗</span>
+            </div>
+            <h4>Medium</h4>
+            <p>On-device AI, scalable iOS architecture, Combine/Core Data, and AI-assisted development.</p>
+            <span class="channel-cta">Open profile</span>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="section experience" id="experience">
+    <section class="section research" id="research">
       <div class="section-inner">
         <div class="section-label" data-animate>
           <span>04</span>
-          <h2>ops_history</h2>
-          <p>Deployment timeline.</p>
+          <h2>research_papers</h2>
+          <p>As of Oct 2026</p>
         </div>
-        <ol class="ops-list">
-          <li data-animate data-delay="0">
-            <div class="ops-when">2025 — Present</div>
-            <div class="ops-what">
-              <h3>PayPal <span>Senior Software Engineer</span></h3>
-              <p>App Switch payments, AI-assisted fraud signals, DataDog/FPTI observability, Bazel next-gen iOS platform, Harness/BrowserStack/Appium CI.</p>
-            </div>
+
+        <ul class="research-list" data-animate data-delay="1">
+          <li>
+            <a href="https://i2or-ijrece.com/vol.-6-issue-4--version-2-.html" target="_blank" rel="noopener noreferrer">
+              <span class="r-src">IJRECE</span>
+              <span class="r-title">Estimation of Theme Re-Hotting with a Temporal Design in Online Media</span>
+              <span class="r-meta">I2OR · Vol. 6 Issue 4 ↗</span>
+            </a>
           </li>
-          <li data-animate data-delay="1">
-            <div class="ops-when">2023 — 2025</div>
-            <div class="ops-what">
-              <h3>T-Mobile <span>Software Engineer II — iOS</span></h3>
-              <p>Led 8 in-store CocoaPods apps; modularization reduced release bugs ~30%.</p>
-            </div>
+          <li>
+            <a href="https://ieeexplore.ieee.org/document/11680944" target="_blank" rel="noopener noreferrer">
+              <span class="r-src">IEEE</span>
+              <span class="r-title">IEEE Xplore research publication</span>
+              <span class="r-meta">Doc. 11680944 ↗</span>
+            </a>
           </li>
-          <li data-animate data-delay="2">
-            <div class="ops-when">2021 — 2023</div>
-            <div class="ops-what">
-              <h3>Citibank <span>via Globant</span></h3>
-              <p>Wealth Dashboard on Obj-C / Swift / SwiftUI with Adobe Analytics, Splunk, and MVVM networking.</p>
-            </div>
+          <li>
+            <a href="https://ieeexplore.ieee.org/document/11680846" target="_blank" rel="noopener noreferrer">
+              <span class="r-src">IEEE</span>
+              <span class="r-title">IEEE Xplore research publication</span>
+              <span class="r-meta">Doc. 11680846 ↗</span>
+            </a>
           </li>
-          <li data-animate data-delay="3">
-            <div class="ops-when">2020 — 2021</div>
-            <div class="ops-what">
-              <h3>SM Logics <span>Software Developer</span></h3>
-              <p>iOS search features in Swift with XCTest coverage.</p>
-            </div>
+          <li>
+            <a href="https://scholars.csus.edu/esploro/outputs/graduate/Citizen-science-to-the-rescue/99257896211701671" target="_blank" rel="noopener noreferrer">
+              <span class="r-src">CSUS</span>
+              <span class="r-title">Citizen Science to the Rescue</span>
+              <span class="r-meta">Graduate research · Sacramento State ↗</span>
+            </a>
           </li>
-        </ol>
+        </ul>
       </div>
     </section>
 
@@ -467,8 +470,8 @@
         <ul class="socials">
           <li><a href="https://www.linkedin.com/in/uthejm/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
           <li><a href="https://github.com/Uthejmopathi" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-          <li><a href="https://hackernoon.com/u/uthejdeveloper" target="_blank" rel="noopener noreferrer">HackerNoon</a></li>
-          <li><a href="https://dzone.com/users/5498482/mopathiuthej.html" target="_blank" rel="noopener noreferrer">DZone</a></li>
+          <li><a href="https://hackernoon.com/u/uthejmopathi" target="_blank" rel="noopener noreferrer">HackerNoon</a></li>
+          <li><a href="https://dzone.com/authors/mopathiuthej" target="_blank" rel="noopener noreferrer">DZone</a></li>
           <li><a href="https://medium.com/@mopathiuthej0711" target="_blank" rel="noopener noreferrer">Medium</a></li>
         </ul>
       </div>
@@ -482,6 +485,6 @@
     <a href="#top" id="uplink-top">Return to uplink ↑</a>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=2"></script>
 </body>
 </html>

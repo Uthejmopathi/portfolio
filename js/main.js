@@ -243,7 +243,7 @@
   }
 
   // Active nav spy
-  const spySections = ["impact", "work", "writing", "experience", "contact"]
+  const spySections = ["impact", "work", "writing", "research", "contact"]
     .map((id) => document.getElementById(id))
     .filter(Boolean);
   const navLinks = Array.from(document.querySelectorAll('.site-nav a[href^="#"]'));
@@ -277,42 +277,6 @@
     });
   }
 
-  // Article filters with animation
-  const filters = document.querySelectorAll(".filter");
-  const articles = document.querySelectorAll(".article");
-  filters.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const value = btn.dataset.filter || "all";
-      filters.forEach((f) => {
-        const on = f === btn;
-        f.classList.toggle("is-active", on);
-        f.setAttribute("aria-selected", String(on));
-      });
-      articles.forEach((article) => {
-        const match = value === "all" || article.dataset.source === value;
-        if (!match) {
-          if (article.classList.contains("is-hidden")) return;
-          if (reduced) {
-            article.classList.add("is-hidden");
-            return;
-          }
-          article.classList.remove("is-filtering-in");
-          article.classList.add("is-filtering-out");
-          window.setTimeout(() => {
-            article.classList.add("is-hidden");
-            article.classList.remove("is-filtering-out");
-          }, 250);
-        } else {
-          article.classList.remove("is-hidden", "is-filtering-out");
-          if (!reduced) {
-            article.classList.add("is-filtering-in");
-            window.setTimeout(() => article.classList.remove("is-filtering-in"), 350);
-          }
-        }
-      });
-    });
-  });
-
   // Interactive live terminal
   const terminalPanel = document.getElementById("terminal-panel");
   const terminalLog = document.getElementById("terminal-log");
@@ -337,6 +301,8 @@
       writing: "#writing",
       intel: "#writing",
       articles: "#writing",
+      research: "#research",
+      papers: "#research",
       experience: "#experience",
       ops: "#experience",
       contact: "#contact",
@@ -346,8 +312,8 @@
     const external = {
       github: "https://github.com/Uthejmopathi",
       linkedin: "https://www.linkedin.com/in/uthejm/",
-      hackernoon: "https://hackernoon.com/u/uthejdeveloper",
-      dzone: "https://dzone.com/users/5498482/mopathiuthej.html",
+      hackernoon: "https://hackernoon.com/u/uthejmopathi",
+      dzone: "https://dzone.com/authors/mopathiuthej",
       medium: "https://medium.com/@mopathiuthej0711",
       email: "mailto:mopathiuthej4@gmail.com",
       mail: "mailto:mopathiuthej4@gmail.com",
@@ -412,11 +378,12 @@
       "  help                 show this menu",
       "  whoami / status      operator profile",
       "  clear                clear terminal",
-      "  work | projects      → selected work",
+      "  work | projects      → experience + projects",
       "  resume               download resume PDF",
       "  impact | about       → sections",
-      "  writing | intel      → articles",
-      "  experience | ops     → timeline",
+      "  writing | intel      → writing channels",
+      "  research | papers    → research papers",
+      "  experience | ops     → experience (inside work)",
       "  contact | email      → open channel",
       "  github | linkedin    open profiles",
       "  medium | hackernoon | dzone",
@@ -449,7 +416,8 @@
       }
 
       if (cmd === "whoami") {
-        appendLine("&gt; uthej_mopathi — senior_ios_engineer / ai_systems", "out");
+        appendLine("&gt; uthej_mopathi — senior software engineer @ paypal", "out");
+        appendLine("&gt; dzone expert · apm full member", "out");
         return;
       }
 
@@ -459,7 +427,7 @@
       }
 
       if (cmd === "ls" || cmd === "sections") {
-        appendLine("&gt; impact  about  work  writing  experience  contact  resume", "out");
+        appendLine("&gt; impact  about  work  writing  research  experience  contact  resume", "out");
         return;
       }
 
@@ -564,7 +532,7 @@
         if (!partial) return;
         const suggestions = [
           "help", "clear", "whoami", "status", "ls", "resume", "work", "projects",
-          "impact", "about", "writing", "intel", "experience", "ops", "contact",
+          "impact", "about", "writing", "intel", "research", "papers", "experience", "ops", "contact",
           "github", "linkedin", "medium", "hackernoon", "dzone", "email", "open", "cd",
         ].filter((item) => item.startsWith(partial));
         if (suggestions.length === 1) terminalInput.value = suggestions[0];
