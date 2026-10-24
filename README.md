@@ -4,18 +4,9 @@ Static sci-fi / HUD portfolio site. Hosted via **GitHub Pages + GitHub Actions**
 
 ## Live site (GitHub Pages)
 
-After the first successful Actions run, the site will be at:
+**https://uthejmopathi.github.io/portfolio/**
 
-`https://uthejmopathi.github.io/portfolio/`
-
-Every push to `main` redeploys automatically (see `.github/workflows/deploy-pages.yml`).
-
-### One-time GitHub setup
-
-1. Create a public repo named `portfolio` under your GitHub account.
-2. Push this project to `main`.
-3. In the repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-4. Open the **Actions** tab and confirm the “Deploy to GitHub Pages” workflow succeeds.
+Hosted from the `main` branch (static files at repo root). Every push to `main` republishes the site.
 
 ## Contents
 
