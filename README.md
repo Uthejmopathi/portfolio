@@ -1,6 +1,6 @@
 # Uthej Mopathi — Portfolio
 
-Static sci-fi / HUD portfolio site. Hosted via **GitHub Pages + GitHub Actions**, and also easy to drop on a NAS.
+Please find my portfolio website here detailing my experience, projects and contributions.
 
 ## Live site (GitHub Pages)
 
